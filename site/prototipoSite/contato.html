@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imagem/png" href="assets/img/icon_logo_jajatur.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Contato - JajaTur</title>
+</head>
+<body>
+    <div id="bgPagina">
+        <Header>
+            <img src="assets/img/logo_jajatur.png" alt="imagem_propaganda_jajaTur" style="max-width: 100%; border-radius: 10px 10px 0 0;">
+        </Header>
+        
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="destino.html">Destino</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="promocoes.html">Promoções</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    
+        <main>
+        <div id="bgContato">
+           
+            <!-- tabela de contatos -->
+            <table class="table table-hover">
+                <tbody>
+                  <tr>
+                    <th>Email</th>
+                    <td><a href="mailto:jajatur@sac.com" target="_blank">jajatur@sac.com</a></td>
+                  </tr>
+                  <tr>
+                    <th>Telefone</th>
+                    <td><a href="tel:15996974986" target="_blank">0800-123-NUMEROFICTÍCIO</a></td>
+                  </tr>
+                  <tr>
+                    <th>Facebook</th>
+                    <td><a href="https://www.facebook.com/" target="_blank">JajaTur Oficial</a></td>
+                  </tr>
+                  <tr>
+                    <th>Instagram</th>
+                    <td><a href="https://www.instagram.com/" target="_blank">jajatur_oficial</a></td>
+                  </tr>
+                </tbody>
+            </table>
+            
+            <p style="color: white; font-size: 25px;">Entre em contato conosco</p>
+
+            <!-- formulário de contato -->
+            <div class="container">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Nome</span>
+                    </div>
+                    <input class='form-control' type="text">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Sobrenome</span>
+                    </div>
+                    <input class='form-control' type="text">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Email</span>
+                    </div>
+                    <input class='form-control' type="text">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Telefone</span>
+                    </div>
+                    <input class='form-control' type="text" placeholder="(DDD)XXXXX-XXXXX">
+                    <select class='form-control' type="text">
+                        <option value="">--Selecione o motivo do contato</option>
+                        <option>Não consigo entrar em contato</option>
+                        <option>Problema com pagamento</option>
+                        <option>Outro</option>
+                    </select>
+                </div>
+                <div class="form-check mb-3 mr-sm-2">
+                    <input type="checkbox" class = 'form-check-input' id="Check">
+                    <label for="Check" class="form-check-label">Desejo receber novidades sobre a JajaTur</label>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1" style="font-size: 17px;">Fale conosco:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="reset" class="btn btn-primary mb-3" onClick="finalizouMensagem()">Enviar</button>
+
+        </div>
+        </main>
+    
+        <footer>
+            <p style="color: white;">Formas de pagamento</p>
+            <img src="assets/img/formas-de-pagamento.png" alt="formas de pagamento">
+            <p style="color: gray;">JajaTur - CNPJ: XX.XXX.XXX/0001-XX Rua Fictícia, XXXX, 3 andar, sala 404 | Bairro Fictício Too, Cidade Fictícia Também - SIGLA CEP:XXXXX-XXX</p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <script>
+        function finalizouMensagem(){
+            alert('Mensagem enviada com sucesso');
+        }
+    </script>
+
+</body>
+</html>
