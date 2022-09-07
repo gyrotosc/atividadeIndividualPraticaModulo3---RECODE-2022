@@ -6,7 +6,7 @@ public class Cliente {
 	private String nomeCliente;
 	private int idadeCliente;
 	private String cpfCliente;
-	private int telefoneCliente;
+	private String telefoneCliente;
 	private String emailCliente;
 	
 	public int getCodCliente() {
@@ -33,10 +33,10 @@ public class Cliente {
 	public void setCpfCliente(String cpfCliente) {
 		this.cpfCliente = cpfCliente;
 	}
-	public int getTelefoneCliente() {
+	public String getTelefoneCliente() {
 		return telefoneCliente;
 	}
-	public void setTelefoneCliente(int telefoneCliente) {
+	public void setTelefoneCliente(String telefoneCliente) {
 		this.telefoneCliente = telefoneCliente;
 	}
 	public String getEmailCliente() {

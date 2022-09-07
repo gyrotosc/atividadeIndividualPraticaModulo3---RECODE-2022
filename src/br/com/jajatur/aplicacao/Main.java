@@ -42,7 +42,7 @@ public class Main {
 						System.out.println("Insira o seu CPF:");
 						cliente.setCpfCliente(entrada.next());
 						System.out.println("Insira o seu telefone (Exemplo: DD + 9XXXXXXXX):");
-						cliente.setTelefoneCliente(entrada.nextInt());
+						cliente.setTelefoneCliente(entrada.next());
 						System.out.println("Insira o seu Email:");
 						cliente.setEmailCliente(entrada.next());
 						
@@ -52,14 +52,13 @@ public class Main {
 					case 2:
 						ClienteDAO clienteDAO1 = new ClienteDAO();
 						
-						
-						
 						String cpfCliente1 = new String();
 						
 						System.out.println("Digite o seu CPF:");
 						cpfCliente1 = entrada.next();
 						
 						clienteDAO1.getDadosCliente(cpfCliente1);
+						
 					break;
 					
 					case 3:

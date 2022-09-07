@@ -35,7 +35,7 @@ public List<ProdutoViagem> getProdutoViagem(){
 				//recuperar o codCliente
 				produtoViagemDados.setCodProdutoViagem(rset.getInt("codProdutoViagem"));
 				produtoViagemDados.setValorPrevioProdutoViagem(rset.getFloat("valorPrevioProdutoViagem"));
-				produtoViagemDados.setDataPartidaProdutoViagem(rset.getDate("dataPartidaProdutoViagem"));
+				produtoViagemDados.setDataPartidaProdutoViagem(rset.getString("dataPartidaProdutoViagem"));
 				produtoViagemDados.setLocalPartidaProdutoViagem(rset.getString("localPartidaProdutoViagem"));
 				
 				produtoViagem.add(produtoViagemDados);

@@ -31,7 +31,7 @@ public class ClienteDAO {
 			pstm.setString(1, cliente.getNomeCliente());
 			pstm.setInt(2, cliente.getIdadeCliente());
 			pstm.setString(3, cliente.getCpfCliente());
-			pstm.setInt(4, cliente.getTelefoneCliente());
+			pstm.setString(4, cliente.getTelefoneCliente());
 			pstm.setString(5, cliente.getEmailCliente());
 			
 			//executar a query
@@ -86,10 +86,12 @@ public class ClienteDAO {
 				clienteDados.setNomeCliente(rset.getString("nomeCliente"));
 				clienteDados.setIdadeCliente(rset.getInt("idadeCliente"));
 				clienteDados.setCpfCliente(rset.getString("cpfCliente"));
-				clienteDados.setTelefoneCliente(rset.getInt("telefoneCliente"));
+				clienteDados.setTelefoneCliente(rset.getString("telefoneCliente"));
 				clienteDados.setEmailCliente(rset.getString("emailCliente"));
 				
 				cliente.add(clienteDados);
+				
+				System.out.println(cliente);
 			}
 		} catch (Exception e){
 			e.printStackTrace();
@@ -132,7 +134,7 @@ public class ClienteDAO {
 			pstm.setString(1, cliente.getNomeCliente());
 			pstm.setInt(2, cliente.getIdadeCliente());
 			pstm.setString(3, cliente.getCpfCliente());
-			pstm.setInt(4, cliente.getTelefoneCliente());
+			pstm.setString(4, cliente.getTelefoneCliente());
 			pstm.setString(5, cliente.getEmailCliente());
 			pstm.setInt(6, cliente.getCodCliente());
 			

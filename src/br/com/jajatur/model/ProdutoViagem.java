@@ -1,12 +1,10 @@
 package br.com.jajatur.model;
 
-import java.util.Date;
-
 public class ProdutoViagem {
 
 	private int codProdutoViagem;
 	private float valorPrevioProdutoViagem;
-	private Date dataPartidaProdutoViagem = new Date();
+	private String dataPartidaProdutoViagem;
 	private String localPartidaProdutoViagem;
 	
 	public int getCodProdutoViagem() {
@@ -21,10 +19,10 @@ public class ProdutoViagem {
 	public void setValorPrevioProdutoViagem(float valorPrevioProdutoViagem) {
 		this.valorPrevioProdutoViagem = valorPrevioProdutoViagem;
 	}
-	public Date getDataPartidaProdutoViagem() {
+	public String getDataPartidaProdutoViagem() {
 		return dataPartidaProdutoViagem;
 	}
-	public void setDataPartidaProdutoViagem(Date dataPartidaProdutoViagem) {
+	public void setDataPartidaProdutoViagem(String dataPartidaProdutoViagem) {
 		this.dataPartidaProdutoViagem = dataPartidaProdutoViagem;
 	}
 	public String getLocalPartidaProdutoViagem() {

@@ -2,19 +2,21 @@
 
 CREATE DATABASE jajaTur;
 
+use jajatur;
+
 CREATE TABLE cliente (
     codCliente int NOT NULL AUTO_INCREMENT PRIMARY KEY,
     nomeCliente varchar(50),
     idadeCliente int(3),
     cpfCliente varchar(11),
-    telefoneCliente int(11),
+    telefoneCliente varchar(11),
     emailCliente varchar(30)
 );
 
 CREATE TABLE produtoViagem (
     codProdutoViagem int NOT NULL AUTO_INCREMENT PRIMARY KEY,
     valorPrevioProdutoViagem float,
-    dataPartidaProdutoViagem date,
+    dataPartidaProdutoViagem varchar(11),
     localPartidaProdutoViagem varchar(20)
 );
 
@@ -60,12 +62,12 @@ ALTER TABLE contacta ADD CONSTRAINT FK_contacta_3
     
 INSERT INTO produtoViagem (valorPrevioProdutoViagem, 
 	dataPartidaProdutoViagem, localPartidaProdutoViagem)
-	VALUES (2500.99, 12/12/2022, Sao Paulo);
+	VALUES (2500.99, 12-12-2022, "Sao Paulo");
 
 INSERT INTO produtoViagem (valorPrevioProdutoViagem, 
 	dataPartidaProdutoViagem, localPartidaProdutoViagem)
-	VALUES (3350.99, 20/02/2023, Salvador);
+	VALUES (3350.99, 20-02-2023, "Salvador");
 	
-INSERT INTO atendente(nomeAtendente) VALUES (Jairo);
+INSERT INTO atendente(nomeAtendente) VALUES ("Jairo");
 
-INSERT INTO atendente(nomeAtendente) VALUES (Jose);
+INSERT INTO atendente(nomeAtendente) VALUES ("Jose");
